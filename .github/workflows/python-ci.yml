@@ -39,7 +39,7 @@ jobs:
                     echo "lang_version=$v" >> $GITHUB_OUTPUT
                     t=$(cat .tox-env)
                     echo "tox_env=$t" >> $GITHUB_OUTPUT
-            - uses: actions/setup-python@v4
+            - uses: actions/setup-python@v5
               with:
                   python-version: ${{ steps.get_lang_version.outputs.lang_version }}
             - name: update-pip
@@ -51,7 +51,7 @@ jobs:
               id: pip-cache
               run: echo "dir=$(pip cache dir)" >> $GITHUB_OUTPUT
             - name: cache-pip
-              uses: actions/cache@v3
+              uses: actions/cache@v4
               with:
                   path: ${{ steps.pip-cache.outputs.dir }}
                   key: pip|${{ runner.os }}|${{ steps.get_lang_version.outputs.lang_version }}|${{ hashFiles('setup.py') }}|${{ hashFiles('requirements/*.txt') }}
@@ -74,7 +74,7 @@ jobs:
                     echo "lang_version=$v" >> $GITHUB_OUTPUT
                     t=$(cat .tox-env)
                     echo "tox_env=$t" >> $GITHUB_OUTPUT
-            - uses: actions/setup-python@v4
+            - uses: actions/setup-python@v5
               with:
                   python-version: ${{ steps.get_lang_version.outputs.lang_version }}
             - name: install-deps
@@ -82,7 +82,7 @@ jobs:
             - name: make-docs
               run: cd docs && make html
             - name: publish-docs
-              uses: peaceiris/actions-gh-pages@v3
+              uses: peaceiris/actions-gh-pages@v4
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
                   publish_dir: ./docs/_build/html
