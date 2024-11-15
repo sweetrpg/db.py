@@ -103,6 +103,7 @@ jobs:
         concurrency: publish
         permissions:
             id-token: write
+            contents: write
         steps:
             - uses: actions/checkout@v4
               with:
