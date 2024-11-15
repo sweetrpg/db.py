@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = "Paul Schifferer <dm@sweetrpg.com>"
-"""MongoDB repository module.
+"""
+MongoDB repository module.
 """
 
 from ..exceptions import ObjectNotFound

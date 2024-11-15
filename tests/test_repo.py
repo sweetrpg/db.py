@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
+Test cases for repo functions
 """
 
 from sweetrpg_db.mongodb.repo import MongoDataRepository

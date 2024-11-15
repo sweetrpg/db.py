@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = "Paul Schifferer <dm@sweetrpg.com>"
-"""Test cases for QueryOptions
+"""
+Test cases for QueryOptions
 """
 
 from sweetrpg_db.mongodb.options import QueryOptions
