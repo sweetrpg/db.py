@@ -33,7 +33,7 @@ filelock==3.16.1
     #   virtualenv
 iniconfig==2.0.0
     # via pytest
-marshmallow==3.23.1
+marshmallow==3.23.2
     # via
     #   -r /home/runner/work/db.py/db.py/requirements/pkg.in
     #   sweetrpg-model-core
