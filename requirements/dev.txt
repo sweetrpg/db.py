@@ -67,7 +67,7 @@ markdown-it-py==3.0.0
     # via rich
 markupsafe==3.0.2
     # via jinja2
-marshmallow==3.23.2
+marshmallow==3.23.3
     # via
     #   -r /home/runner/work/db.py/db.py/requirements/pkg.in
     #   sweetrpg-model-core
@@ -192,7 +192,7 @@ typing-extensions==4.12.2
     #   typer
 urllib3==2.3.0
     # via requests
-virtualenv==20.28.0
+virtualenv==20.28.1
     # via tox
 wheel==0.45.1
     # via pip-tools
