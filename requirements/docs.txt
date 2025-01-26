@@ -35,7 +35,7 @@ markdown-it-py==3.0.0
     # via rich
 markupsafe==3.0.2
     # via jinja2
-marshmallow==3.25.1
+marshmallow==3.26.0
     # via
     #   -r /home/runner/work/db.py/db.py/requirements/pkg.in
     #   sweetrpg-model-core
@@ -50,7 +50,7 @@ packaging==24.2
     #   sphinx
 pallets-sphinx-themes==2.3.0
     # via -r requirements/docs.in
-pydantic==2.10.5
+pydantic==2.10.6
     # via rstcheck-core
 pydantic-core==2.27.2
     # via pydantic
