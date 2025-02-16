@@ -33,7 +33,7 @@ click==8.1.8
     #   typer
 colorama==0.4.6
     # via tox
-coverage[toml]==7.6.11
+coverage[toml]==7.6.12
     # via
     #   coverage-badge
     #   pytest-cov
@@ -192,7 +192,7 @@ typing-extensions==4.12.2
     #   typer
 urllib3==2.3.0
     # via requests
-virtualenv==20.29.1
+virtualenv==20.29.2
     # via tox
 wheel==0.45.1
     # via pip-tools
